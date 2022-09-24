@@ -1,0 +1,13 @@
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . index.php [L]
+<Files *.php>
+    Order Deny,Allow
+    Deny from all
+</Files>
+<Files index.php>
+    Order Allow,Deny
+    Allow from all
+</Files>
+Header set Access-Control-Allow-Origin *

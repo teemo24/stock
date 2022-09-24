@@ -1,0 +1,304 @@
+body{
+    background-color: #f2f3f8;
+}
+header{
+    height:80px;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 1px 15px 1px rgba(69,65,78,.1);
+}
+header .brand{
+    height: 80px;
+    width: 150px;
+    float: left;
+    background-color: #282a3c;
+}
+header .user {
+	height: 40px;
+	width: 40px;
+	float: right;
+	background-image: url('../images/avatar.jpg');
+	border-radius: 50%;
+	background-size: contain;
+	margin: 16px 30px;
+}
+main{
+    padding-left: 150px;
+}
+main .topbar-main{
+    height:80px;
+    width: 100%;
+    padding: 20px 30px;
+}
+main .topbar-main > div{
+    float: left;
+}
+main .topbar-main .breadcrumbs{
+    padding: 8px 25px;
+    font-weight: 600;
+    color: #3f4047;
+}
+main .topbar-main .breadcrumbs i{
+    margin: 0 8px;
+}
+main .topbar-main .actions{
+    float:right;
+    padding: 8px 0px;
+}
+main .topbar-main .actions .btn{
+    width: 150px;
+}
+main .topbar-main .title h3{
+        display: block;
+        padding: 7px 25px 7px 0;
+        font-size: 1.55rem;
+        font-weight: 600;
+        color: #3f4047;
+        border-right: 1px solid #ddd;
+        max-width: 150px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        
+}
+main .content {
+    padding: 20px 30px;
+}
+main .content .content-body{
+    background-color: #fff;
+    margin-bottom: 2.2rem;
+    /* box-shadow: 0 1px 15px 1px rgba(69,65,78,.08); */
+    padding: 2.2rem;
+}
+main .content .content-title {
+	font-size: 16px;
+	color: #575962;
+	font-family: inherit;
+	font-weight: 500;
+	line-height: 1.2;
+	background-color: white;
+	height: 72px;
+	padding: 16px;
+	border-bottom: 4px solid #f2f3f8;
+}
+
+main .content .content-body table thead th{
+    color: #007ad9;
+/* text-decoration: none; */
+}
+aside{
+    float: left;
+}
+.menu{
+    background-color: #282a3c;
+    width: 150px;
+    /* height:100vh; */
+    height:1200px;
+    /* position: fixed;
+    top: 80px; */
+}
+.menu .menu-list{
+    padding: 0;
+    margin: 0;
+}
+.menu .menu-list > li:hover {
+	cursor: pointer;
+	background-color: #1f1f26;
+	/* margin: 16px 0; */
+	box-shadow: 0px 0px 16px #f2f3f821;
+}
+.menu .menu-list li:hover i{
+    color: #007ad9 !important;
+}
+.menu .menu-list li:hover span{
+    font-size: 14px;
+}
+.menu .menu-list li{
+    position: relative;
+    list-style: none;
+}
+.menu .menu-list li i{
+    font-size: 30px !important;
+}
+.menu .menu-list li :is(i,span){
+    color: #BBB;
+    text-align: center;
+}
+.menu .menu-list li a{
+    display: block;
+    position: relative;
+    text-align: center;
+    height: auto;
+    padding: 1.25rem 1rem;
+    text-decoration: none;
+}
+.menu .menu-list span{
+    margin-top: .75rem;
+    font-weight: 400;
+    font-family: Poppins;
+    font-size:12px;
+    display: block;
+
+}
+/* SUBMENU */
+.menu .submenu {
+    display: none;
+	position: absolute;
+	top: 0;
+	right: -220px;
+	background: #1f1f26;
+	width: 200px;
+	padding: 16px;
+	text-align: left;
+	border-radius: 16px;
+	color: #bbb;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 10;
+}
+.menu .submenu span {
+    position: absolute;
+    top: 0;
+    left:-8px;
+    border: 8px transparent solid;
+    border-top: 16px #1f1f26 solid;
+    border-left: 16px #1f1f26 solid;
+    transform: rotate(-45deg);
+    border-radius: 4px;
+}
+.menu .submenu li {
+    list-style: disc;
+    width: 50%;
+    padding-left: 8px;
+}
+.menu .submenu-list li a{ 
+    color: #bbb;
+    text-align: left;
+}   
+.menu .submenu-list li a:hover{    
+    color: #007ad9 !important;
+    letter-spacing: 2px;
+}
+.menu .submenu-list li a{    
+    padding: 0;
+}
+
+.menu .menu-item:after{
+    content:'';
+    position:absolute;
+    top:0;
+    right:-40px;
+    width: 40px;
+    height: 100%;
+}
+.menu-item:hover .submenu{
+	display: block;
+}
+
+.content-body{
+    display: flex;
+}
+.form-table tr{
+   height: 48px;
+}
+.form-table table{
+    width: 100%;
+}
+.form-table label sup{
+    color:red;
+    font-size: 16px;
+}
+.form-table .label{
+    text-align: right;
+    padding-right: 32px;
+    font-family: Poppins;
+    font-size: 14px;
+}
+.form-table input:focus {
+    border-color: #007ad9;
+}
+.form-table input, .form-table textarea, .form-table select {
+    width: 90%;
+	margin: 0 auto;
+	border-radius: 4px;
+	border: 1px solid #c0c1c6;
+	height: 40px;
+	color: #1e1f22;
+	font-size: 14px;
+	padding-left: 16px;
+	letter-spacing: 1px;
+	font-weight: bold;
+}
+.form-table textarea {
+	height: 240px;
+	padding: 16px;
+}
+.box-left, .box-right{
+    width: 50%;
+    float:left;
+}
+.box-right{
+    float:right;
+}
+.btn-save{
+    margin: 0 auto;
+    width: 160px;
+    display: block;
+}
+td.actions{
+    max-width: 240px;
+    min-width: 80px;
+}
+.actions a.btn{
+    color: white;
+    margin: 0 4px;
+}
+.input .qt-radio {
+	width: 40%;
+	float: left;
+	text-align: center;
+}
+.input .qt-radio :hover{
+    cursor:pointer;
+}
+.input .qt-radio input {
+	width: 56px;
+    height: 16px;	padding: 0 16px;
+}
+select[name=role]{
+    text-transform: capitalize;
+}
+.menu-item span {
+        font-size: 14px !important;
+        font-weight: bold !important;
+        font-family: unset !important;
+}
+.logout {
+	padding: 24px;
+	height: 80px;
+	display: inline-block;
+	font-size: 36px;
+	line-height: 0;
+	color: #0d6efd;
+}
+.actions-btn-personnel{
+    display:flex;
+}
+.btn-personnel{
+	height: 32px;
+	width: 32px;
+	font-size: 24px;
+	padding: 4px 0;
+	line-height: 0;
+	margin: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
